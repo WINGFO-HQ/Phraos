@@ -67,8 +67,8 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-echo -e "${YELLOW}[*] Waiting for node to start...${NC}"
-sleep 60
+echo -e "${YELLOW}[*] Waiting for node to start... (5 minutes)${NC}"
+sleep 300
 
 echo -e "${YELLOW}[*] Checking sync status...${NC}"
 BLOCK_HEIGHT=$(curl -s 127.0.0.1:18100/ \
